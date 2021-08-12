@@ -51,19 +51,8 @@ html, body {
 
 .menu_2 {
   display: flex;
-}
-
-.menu_2 span {
-  color: #fff;
-  display: inline-block;
-  line-height: 20px;
-  text-align: center;
-  vertical-align: middle;
-  width: 20px;
-}
-
-.icon-twitter, .icon-instagram {
-  font-size: 3.6rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .copyright {
