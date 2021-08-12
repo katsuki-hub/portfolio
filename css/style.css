@@ -1,0 +1,45 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  background-color: rgb(100, 92, 92);
+}
+
+html {
+  line-height: 1;
+}
+
+.header-contents {
+  text-align: center;
+}
+
+.header-contents h1 {
+  display: inline-block;
+  font-size: 2.5rem;
+  letter-spacing: 0.1em;
+  line-height: 60px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.menu {
+  display: none;
+}
+
+footer {
+  box-sizing: content-box;
+	font-size: 18px;
+	text-align: center;
+  color: #fff;
+}
+
+
+@media screen and (max-width:480px) {}
+
+@media screen and (min-width:481px) and ( max-width:768px) {}
+
+@media screen and (min-width:1024px) {}
