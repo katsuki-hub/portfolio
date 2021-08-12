@@ -1,45 +1,123 @@
 @charset "UTF-8";
 html, body {
+  min-width: 270px;
   margin: 0;
   padding: 0;
   border: 0;
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-  background-color: rgb(100, 92, 92);
-}
-
-html {
+  background-color: rgb(51, 47, 47);
   line-height: 1;
 }
 
 .header-contents {
+  box-sizing: content-box;
   text-align: center;
+  line-height: 60px;
 }
 
 .header-contents h1 {
   display: inline-block;
   font-size: 2.5rem;
   letter-spacing: 0.1em;
-  line-height: 60px;
   padding: 0 10px;
   color: #fff;
 }
 
-.menu {
+#boxmenu {
   display: none;
+}
+
+#boxmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#boxmenu li {
+  font-size: 24px;
+  padding: 8px 0 8px 20px;
+}
+
+#boxmenu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.menu_1 li {
+  border-bottom: 1px solid #ffffff;
+}
+
+.menu_2 {
+  display: flex;
+}
+
+.menu_2 span {
+  color: #fff;
+  display: inline-block;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+}
+
+.icon-twitter, .icon-instagram {
+  font-size: 3.6rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  padding: 30px;
 }
 
 footer {
   box-sizing: content-box;
-	font-size: 18px;
-	text-align: center;
+  font-size: 18px;
+  text-align: center;
   color: #fff;
 }
 
-
 @media screen and (max-width:480px) {}
 
-@media screen and (min-width:481px) and ( max-width:768px) {}
+@media screen and ( max-width:768px) {
+  .header-contents {
+    line-height: 30px;
+  }
+  .header-contents h1 {
+    font-size: 1.3rem;
+    padding: 0 10px;
+  }
+  .menu-btn {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  /*三本線のメニューボタン*/
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+  .menu-btn span:after {
+    top: 8px;
+  }
+  .menu-btn span, .menu-btn span:before, .menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+  }
+  /*三本線のメニューボタン*/
+}
 
 @media screen and (min-width:1024px) {}

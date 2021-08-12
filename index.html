@@ -8,6 +8,8 @@
   <title>KATSUKI</title>
   <meta name="description" content="『KATSUKI』ポートフォリオサイトです">
   <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/all.css" rel="stylesheet">
+  <script src="scripts/all.js"></script>
 </head>
 
 <body>
@@ -15,31 +17,35 @@
     <div class="header-contents"><a href="https://pf.katsumaru.blog/">
         <h1>KATSUKI</h1>
       </a>
+      <div class="btn" id="open_btn">
+        <label class="menu-btn"><span></span></label>
+      </div>
     </div><!-- header-contents -->
-    <div class="btn" id="open_btn">
-      <span></span>
-    </div>
   </header>
 
-  <nav class="menu" role="navigation">
-    <ul class="menu_1">
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#work">WORK</a></li>
-      <li><a href="#news">NEWS</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
-
-
-    <div class="sns_btm">
-      <ul class="menu_2">
-        <li><a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span>Instagram</a></li>
-        <li><a href="https://twitter.com/" target="_blank"><span class="icon-twitter"></span>Twitter</a></li>
+  <div id="boxmenu">
+    <nav>
+      <ul class="menu_1">
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#work">WORK</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
-      <div class="copyright" role="contentinfo">
+
+
+      <div class="sns_btm">
+        <ul class="menu_2">
+          <li><a href="https://www.instagram.com/" target="_blank"><span class="fa fa-android"></span>Instagram</a>
+          </li>
+          <li><a href="https://twitter.com/" target="_blank"><span class="icon-twitter"></span>Twitter</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
         <small>&copy; 2021 KATSUKI</small>
       </div>
-    </div>
-  </nav>
+
+    </nav>
+  </div><!-- boxmenu -->
 
   <div class="main-wrapper">
     <section class="top_video">
@@ -48,11 +54,24 @@
       </video>
     </section><!-- top_video -->
 
+    <section>
+      <i class="fa fa-android"></i>
+    </section>
+
 
 
 
   </div><!-- main-wrapper -->
   <footer><small>&copy; 2021 KATSUKI</small></footer>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $("#open_btn").on("click", function () {
+        $("#boxmenu").slideToggle();
+      });
+    });
+  </script>
 </body>
 
 </html>
