@@ -25,10 +25,6 @@ html, body {
   color: #fff;
 }
 
-#boxmenu {
-  display: none;
-}
-
 #boxmenu ul {
   margin: 0;
   padding: 0;
@@ -79,6 +75,9 @@ footer {
     font-size: 1.3rem;
     padding: 0 10px;
   }
+  #boxmenu {
+    display: none;
+  }
   .menu-btn {
     position: fixed;
     top: 15px;
@@ -109,4 +108,16 @@ footer {
   /*三本線のメニューボタン*/
 }
 
-@media screen and (min-width:1024px) {}
+@media screen and (min-width:769px) {
+  #boxmenu ul {
+    display: flex;
+    float: right;
+  }
+  #menu_1 ul li {
+    flex: 1 1;
+    
+  }
+  .copyright {
+    display: none;
+  }
+}
