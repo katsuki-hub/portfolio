@@ -14,25 +14,31 @@ html, body {
 .header-contents {
   box-sizing: content-box;
   text-align: center;
-  line-height: 60px;
+  line-height: 30px;
 }
 
 .header-contents h1 {
   display: inline-block;
   font-size: 2.5rem;
   letter-spacing: 0.1em;
-  padding: 0 10px;
+  padding: 5px;
   color: #fff;
 }
 
+#boxmenu nav {
+  display: flex;
+  float: right;
+}
+
 #boxmenu ul {
-  margin: 0;
+  display: flex;
+  margin: 0 20px 0 5px;
   padding: 0;
   list-style-type: none;
 }
 
 #boxmenu li {
-  font-size: 24px;
+  font-size: 18px;
   padding: 8px 0 8px 20px;
 }
 
@@ -41,21 +47,8 @@ html, body {
   text-decoration: none;
 }
 
-.menu_1 li {
-  border-bottom: 1px solid #ffffff;
-}
-
-.menu_2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .copyright {
-  text-align: center;
-  font-size: 18px;
-  color: #fff;
-  padding: 30px;
+  display: none;
 }
 
 footer {
@@ -65,9 +58,7 @@ footer {
   color: #fff;
 }
 
-@media screen and (max-width:480px) {}
-
-@media screen and ( max-width:768px) {
+@media screen and ( max-width:800px) {
   .header-contents {
     line-height: 30px;
   }
@@ -77,6 +68,26 @@ footer {
   }
   #boxmenu {
     display: none;
+  }
+  #boxmenu nav {
+    display: inline;
+    float: none;
+  }
+  #boxmenu ul {
+    display: inline;
+  }
+  #boxmenu li {
+    font-size: 24px;
+  }
+  .menu_1 li {
+    border-bottom: 1px solid #ffffff;
+  }
+  .sns_btm {
+    display: flex;
+    margin-left: 43%;
+  }
+  .menu_2 li {
+    float: left;
   }
   .menu-btn {
     position: fixed;
@@ -88,6 +99,13 @@ footer {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+  .copyright {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px;
   }
   /*三本線のメニューボタン*/
   .menu-btn span:before {
@@ -108,16 +126,8 @@ footer {
   /*三本線のメニューボタン*/
 }
 
-@media screen and (min-width:769px) {
-  #boxmenu ul {
-    display: flex;
-    float: right;
-  }
-  #menu_1 ul li {
-    flex: 1 1;
-    
-  }
-  .copyright {
-    display: none;
+@media screen and (max-width:480px) {
+  .sns_btm {
+    margin-left: 35%;
   }
 }
