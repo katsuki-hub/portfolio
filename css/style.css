@@ -25,6 +25,12 @@ html, body {
   color: #fff;
 }
 
+h2 {}
+
+#about h2 {}
+
+
+
 #boxmenu nav {
   display: flex;
   float: right;
