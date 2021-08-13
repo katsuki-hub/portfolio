@@ -68,6 +68,14 @@ h2 {}
   display: none;
 }
 
+.weblink {
+  margin: 20px;
+}
+
+#work img {
+  width: 100%;
+}
+
 footer {
   box-sizing: content-box;
   font-size: 18px;
