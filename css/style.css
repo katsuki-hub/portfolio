@@ -101,7 +101,7 @@ h2 {}
   display: none;
 }
 
-.blank7 {
+.blank1 {
   margin: 7em 0;
 }
 
@@ -210,6 +210,9 @@ footer {
     position: absolute;
   }
   /*三本線のメニューボタン*/
+  .blank1 {
+    margin: 3em 0;
+  }
 }
 
 @media screen and (max-width:480px) {
