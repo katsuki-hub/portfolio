@@ -111,7 +111,7 @@ h2 {}
 
 .poster {
   margin: auto;
-  width: 70%;
+  width: 80%;
 }
 
 #work p {
@@ -129,6 +129,12 @@ h2 {}
 
 .product {
   text-align: center;
+}
+
+#gallery {}
+
+video {
+  pointer-events:all;
 }
 
 footer {
