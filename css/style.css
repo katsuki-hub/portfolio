@@ -123,18 +123,87 @@ h2 {}
   margin: 0 20px;
 }
 
-#production img {
-  width: 60%;
+/*=====================
+#production スライダー
+*/
+
+#production {
+  background: rgb(26, 3, 48);
 }
 
 .product {
   text-align: center;
 }
 
+.slider {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: solid 2px #666;
+  border-right: solid 2px #666;
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.slick-dots .slick-active button {
+  background: #333;
+}
+
+/*
+#production スライダー
+=====================*/
+
 /* #NEWS  */
 
 #news {
-  margin: 30px;
+  margin: 20px;
 }
 
 .newstab {
@@ -204,9 +273,18 @@ h2 {}
 
 /* /#NEWS */
 
+/* #gallery */
+
+.column {
+  text-align: center;
+}
+
 .column video {
+  max-width: 960px;
   pointer-events: all;
 }
+
+/* /#gallery */
 
 footer {
   box-sizing: content-box;
