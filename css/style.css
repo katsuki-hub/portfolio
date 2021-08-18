@@ -11,6 +11,11 @@ html, body {
   line-height: 1.5;
 }
 
+body {
+  max-width: 1200px;
+  margin: auto;
+}
+
 img {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -240,22 +245,27 @@ h2 {}
   display: none;
   opacity: 0;
   background: #fff;
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 .area ul {
   color: rgb(76, 67, 100);
   list-style: none;
-  padding: 30px 10px;
+  padding: 10px 0;
 }
 
 .area li {
-  padding: 12px 6px;
+  padding: 10px;
+}
+
+#blog.area li {
+  padding: 25px 6px 35px 6px;
 }
 
 .area a {
   color: rgb(76, 67, 100);
 }
+
 
 .area.is-active {
   display: block;
