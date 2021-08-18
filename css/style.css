@@ -7,8 +7,8 @@ html, body {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-  background-color: rgb(51, 47, 47);
-  line-height: 1;
+  background-color: black;
+  line-height: 1.5;
 }
 
 img {
@@ -131,31 +131,81 @@ h2 {}
   text-align: center;
 }
 
-/* リストタブ */
+/* #NEWS  */
+
+#news {
+  margin: 30px;
+}
+
+.newstab {
+  width: 100%;
+  max-width: 960px;
+  margin: 30px auto;
+  background: #000000;
+}
 
 .tab {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  list-style: none;
 }
 
 .tab li a {
   display: block;
-  background: #ddd;
+  background: rgb(75, 126, 68);
   margin: 0 2px;
   padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .tab li.active a {
   background: #fff;
+  color: black;
 }
+
+.area {
+  display: none;
+  opacity: 0;
+  background: #fff;
+  padding: 10px;
+}
+
+.area ul {
+  color: rgb(76, 67, 100);
+  list-style: none;
+  padding: 30px 10px;
+}
+
+.area li {
+  padding: 12px 6px;
+}
+
+.area a {
+  color: rgb(76, 67, 100);
+}
+
+.area.is-active {
+  display: block;
+  animation-name: displayAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* /#NEWS */
 
 .column video {
   pointer-events: all;
-  opacity: 0.8;
-}
-
-.column video.active {
-  opacity: 1;
 }
 
 footer {
