@@ -125,10 +125,10 @@ h2 {}
 
 /*=====================
 #production スライダー
-*/
+=====================*/
 
 #production {
-  background: rgb(26, 3, 48);
+  background: rgb(5, 49, 27);
 }
 
 .product {
@@ -200,7 +200,9 @@ h2 {}
 #production スライダー
 =====================*/
 
-/* #NEWS  */
+/*=====================
+#NEWS
+=====================*/
 
 #news {
   margin: 20px;
@@ -271,9 +273,13 @@ h2 {}
   }
 }
 
-/* /#NEWS */
+/*
+#/NEWS
+=====================*/
 
-/* #gallery */
+/*=====================
+#gallery
+=====================*/
 
 .column {
   text-align: center;
@@ -284,7 +290,9 @@ h2 {}
   pointer-events: all;
 }
 
-/* /#gallery */
+/*
+/#gallery
+=====================*/
 
 footer {
   box-sizing: content-box;
