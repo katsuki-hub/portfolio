@@ -131,10 +131,31 @@ h2 {}
   text-align: center;
 }
 
-#gallery {}
+/* リストタブ */
 
-video {
-  pointer-events:all;
+.tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tab li a {
+  display: block;
+  background: #ddd;
+  margin: 0 2px;
+  padding: 10px 20px;
+}
+
+.tab li.active a {
+  background: #fff;
+}
+
+.column video {
+  pointer-events: all;
+  opacity: 0.8;
+}
+
+.column video.active {
+  opacity: 1;
 }
 
 footer {
