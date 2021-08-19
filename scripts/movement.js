@@ -7,17 +7,34 @@ $(document).ready(function () {
 
 /*画像フェード*/
 function fadeAnime() {
-  $('.fadein').each(function () { //fadeUpTriggerというクラス名が
-    var elemPos = $(this).offset().top - 50;//要素より、50px上の
+  $('.fadein').each(function () {
+    var elemPos = $(this).offset().top - 50;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
-      $(this).addClass('fadeUp');// 画面内に入ったらfadeUpというクラス名を追記
+      $(this).addClass('fadeUp');
     } else {
-      $(this).removeClass('fadeUp');// 画面外に出たらfadeUpというクラス名を外す
+      $(this).removeClass('fadeUp');
     }
   });
 }
 $(window).scroll(function () {
   fadeAnime();
+});
+
+/*にゅ～ん*/
+function smoothAnime() {
+  $('.smoothTrigger').each(function () { 
+    var elemPos = $(this).offset().top - 50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass('smooth');
+    } else {
+      $(this).removeClass('smooth');
+    }
+  });
+}
+$(window).scroll(function () {
+  smoothAnime();
 });

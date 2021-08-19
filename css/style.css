@@ -175,7 +175,7 @@ h2 {
 
 .slick-dots {
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 20px 0 0 -40px;
 }
 
 .slick-dots li {
@@ -186,15 +186,15 @@ h2 {
 .slick-dots button {
   color: transparent;
   outline: none;
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 12px;
   display: block;
   border-radius: 50%;
   background: #ccc;
 }
 
 .slick-dots .slick-active button {
-  background: #333;
+  background: rgb(220, 250, 40);
 }
 
 /*
@@ -326,13 +326,10 @@ footer {
   left: -75%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
   transform: skewX(-25deg);
-  /* 背景白透過を斜めに */
 }
 
 .shine span.mask:hover::before {
-  /*hoverした時の変化*/
-  animation: shine 1.2s;
-  /*アニメーションの名前と速度を定義*/
+  animation: shine 1.5s;
 }
 
 @keyframes shine {
@@ -345,32 +342,70 @@ footer {
 画像きらり
 =====================*/
 
-.fadeUp{
-  animation-name:fadeUpAnime;
-  animation-duration:0.5s;
-  animation-fill-mode:forwards;
-  opacity:0;
+/*=====================
+画像フェード
+=====================*/
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
   }
-  
-  @keyframes fadeUpAnime{
-    from {
-      opacity: 0;
-    transform: translateY(100px);
-    }
-  
-    to {
-      opacity: 1;
-    transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
-  
-  
-  /* スクロールをしたら出現する要素にはじめに透過0を指定　*/
-   
-  .fadein{
-      opacity: 0;
+}
+
+.fadein {
+  opacity: 0;
+}
+
+/*==========
+画像フェード
+==========*/
+
+/*=====================
+にゅ～ん
+=====================*/
+
+.smooth {
+  animation-name: smoothAnime;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  transform-origin: left;
+  opacity: 0;
+}
+
+@keyframes smoothAnime {
+  from {
+    transform: translate3d(0, 100%, 0) skewY(12deg);
+    opacity: 0;
   }
-  
+  to {
+    transform: translate3d(0, 0, 0) skewY(0);
+    opacity: 1;
+  }
+}
+
+.smoothTrigger {
+  opacity: 0;
+}
+
+/*==========
+にゅ～ん
+==========*/
+
+/*=====================
+タブレット＆スマホ
+=====================*/
 
 @media screen and ( max-width:800px) {
   .header-contents {
@@ -442,6 +477,10 @@ footer {
     margin: 3em 0;
   }
 }
+
+/*=====================
+スマホ
+=====================*/
 
 @media screen and (max-width:480px) {
   .sns_btm {
