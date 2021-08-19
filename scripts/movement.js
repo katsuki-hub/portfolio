@@ -25,7 +25,7 @@ $(window).scroll(function () {
 /*にゅ～ん*/
 function smoothAnime() {
   $('.smoothTrigger').each(function () {
-    var elemPos = $(this).offset().top - 10;
+    var elemPos = $(this).offset().top - 200;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
