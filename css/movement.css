@@ -1,0 +1,239 @@
+@charset "UTF-8";
+/*=====================
+#production スライダー
+=====================*/
+
+.slider {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+.slick-prev, .slick-next {
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+    outline: none;
+    border-top: solid 4px #666;
+    border-right: solid 4px #666;
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {
+    left: -5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {
+    right: -5%;
+    transform: rotate(45deg);
+}
+
+.slick-dots {
+    text-align: center;
+    margin: 20px 0 0 -36px;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width: 10px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    background: #ccc;
+}
+
+.slick-dots .slick-active button {
+    background: rgb(220, 250, 40);
+}
+
+/*==========
+  /#production スライダー
+  ==========*/
+
+/*=====================
+画像きらり
+=====================*/
+
+.shine span.mask {
+    position: relative;
+    display: block;
+    line-height: 0;
+    overflow: hidden;
+}
+
+.shine span.mask::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -75%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    transform: skewX(-25deg);
+}
+
+.shine span.mask:hover::before {
+    animation: shine 1.5s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+/*==========
+  画像きらり
+  ==========*/
+
+/*=====================
+  画像フェード
+  =====================*/
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.fadein {
+    opacity: 0;
+}
+
+/*==========
+  画像フェード
+  ==========*/
+
+/*=====================
+  にゅ～ん
+  =====================*/
+
+.smooth {
+    animation-name: smoothAnime;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transform-origin: left;
+    opacity: 0;
+}
+
+@keyframes smoothAnime {
+    from {
+        transform: translate3d(0, 100%, 0) skewY(12deg);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0, 0, 0) skewY(0);
+        opacity: 1;
+    }
+}
+
+.smoothTrigger {
+    opacity: 0;
+}
+
+/*==========
+  にゅ～ん
+  ==========*/
+
+  /*=====================
+  page-top
+  =====================*/
+#page-top a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1630c2;
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.6rem;
+    transition: all 0.3s;
+    letter-spacing: 0.2em;
+}
+
+#page-top a:hover {
+    background: #777;
+}
+
+/*リンクを右下に固定*/
+
+#page-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 2;
+    /*はじめは非表示*/
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+/*　上に上がる動き　*/
+
+#page-top.UpMove {
+    animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*　下に下がる動き　*/
+
+#page-top.DownMove {
+    animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+}
+/*==========
+  page-top
+  ==========*/
