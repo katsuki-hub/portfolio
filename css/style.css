@@ -332,6 +332,7 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
+    overflow: hidden;
   }
   .inimage {
     height: 300px;
