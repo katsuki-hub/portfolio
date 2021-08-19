@@ -331,6 +331,7 @@ footer {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
+    width: 100%;
   }
   .inimage {
     height: 300px;
