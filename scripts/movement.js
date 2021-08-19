@@ -25,7 +25,7 @@ $(window).scroll(function () {
 /*にゅ～ん*/
 function smoothAnime() {
   $('.smoothTrigger').each(function () {
-    var elemPos = $(this).offset().top - 200;
+    var elemPos = $(this).offset().top - 50;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
@@ -42,7 +42,7 @@ $(window).scroll(function () {
 /*TOP PAGEへ*/
 function PageTopAnime() {
   var scroll = $(window).scrollTop();
-  if (scroll >= 1000) {//上から200pxスクロールしたら
+  if (scroll >= 800) {//上から200pxスクロールしたら
     $('#page-top').removeClass('DownMove');
     $('#page-top').addClass('UpMove');
   } else {
