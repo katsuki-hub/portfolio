@@ -154,28 +154,28 @@ h2 {
 
 .slick-prev, .slick-next {
   position: absolute;
-  top: 42%;
+  top: 35%;
   cursor: pointer;
   outline: none;
-  border-top: solid 2px #666;
-  border-right: solid 2px #666;
+  border-top: solid 4px #666;
+  border-right: solid 4px #666;
   height: 15px;
   width: 15px;
 }
 
 .slick-prev {
-  left: -1.5%;
+  left: -5%;
   transform: rotate(-135deg);
 }
 
 .slick-next {
-  right: -1.5%;
+  right: -5%;
   transform: rotate(45deg);
 }
 
 .slick-dots {
   text-align: center;
-  margin: 20px 0 0 -40px;
+  margin: 20px 0 0 -36px;
 }
 
 .slick-dots li {
