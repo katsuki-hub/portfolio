@@ -42,7 +42,7 @@ $(window).scroll(function () {
 /*TOP PAGEへ*/
 function PageTopAnime() {
   var scroll = $(window).scrollTop();
-  if (scroll >= 500) {//上から200pxスクロールしたら
+  if (scroll >= 1000) {//上から200pxスクロールしたら
     $('#page-top').removeClass('DownMove');
     $('#page-top').addClass('UpMove');
   } else {
