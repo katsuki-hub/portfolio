@@ -93,24 +93,27 @@
     </section><!-- /top_video -->
 
     <section id="about">
-      <img src="images/profile.JPG" alt="ボートレーサー" width="100%">
+      <div class="shine"><span class="mask"><img src="images/profile.JPG" alt="ボートレーサー" width="100%"></span></div>
       <h2 class="heading" data-en="about">ABOUT</h2>
     </section><!-- /about -->
 
     <section id="work">
       <h2 class="heading" data-en="work">WORK</h2>
       <div class="weblink">
-        <a href="https://katsumaru.blog/?utm_source=portfolio"><img src="images/outdoor_blog.png" alt="アウトドア部Log"></a>
+        <a href="https://katsumaru.blog/?utm_source=portfolio"><img src="images/outdoor_blog.png" alt="アウトドア部Log"
+            class="fadein"></a>
         <p>アウトドア部Logサイト制作</p>
         <div class="blank1"></div>
-        <a href="https://katsu-study.work/?utm_source=portfolio"><img src="images/JS_link.png" alt="JavaScript"></a>
+        <a href="https://katsu-study.work/?utm_source=portfolio"><img src="images/JS_link.png" alt="JavaScript"
+            class="fadein"></a>
         <p>JavaScript学習用技術ブログサイト</p>
         <div class="blank1"></div>
-        <a href="https://katsu-climbing.site/?utm_source=portfolio"><img src="images/bouldering_link.png" alt="ボルダリング部">
+        <a href="https://katsu-climbing.site/?utm_source=portfolio"><img src="images/bouldering_link.png" alt="ボルダリング部"
+            class="fadein">
         </a>
         <p>ボルダリング部の活動サイト</p>
         <div class="blank1"></div>
-        <div class="poster"><img src="images/GR_poster.png" alt="GRポスター"></div>
+        <div class="poster"><img src="images/GR_poster.png" alt="GRポスター" class="fadein"></div>
         <p>ポスター制作</p>
       </div>
     </section><!-- /WORK -->
@@ -188,16 +191,10 @@
   <footer><small>&copy; 2021 KATSUKI</small></footer>
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $("#open_btn").on("click", function () {
-        $("#boxmenu").slideToggle();
-      });
-    });
-  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="scripts/movement.js"></script>
   <script src="scripts/tabu.js"></script>
   <script src="scripts/slick.js"></script>
 </body>
