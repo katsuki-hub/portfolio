@@ -1,47 +1,53 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja" prefix="og: http://ogp.me/ns#">
 
 <head>
   <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TFKVVRX');</script>
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-TFKVVRX");
+  </script>
   <!-- End Google Tag Manager -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
   <title>KATSUKI</title>
-  <meta name="description" content="『KATSUKI』ポートフォリオサイトです">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/all.css" rel="stylesheet">
-  <link href="css/slick.css" rel="stylesheet" type="text/css">
-  <link href="css/movement.css" rel="stylesheet" type="text/css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="android-touch-icon.png">
-  <meta property="og:title" content="KATSUKI">
-  <meta property="og:type" content="website">
-  <meta property="og:description" content="『KATSUKI』ポートフォリオサイトです">
-  <meta property="og:url" content="https://pf.katsumaru.blog/">
-  <meta property="og:site_name" content="KATSUKI">
-  <meta property="og:image" content="https://pf.katsumaru.blog/images/og_pf.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="KATSUKI">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="manifest" href="manifest.json">
+  <meta name="description" content="『KATSUKI』ポートフォリオサイトです" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/all.css" rel="stylesheet" />
+  <link href="css/slick.css" rel="stylesheet" type="text/css" />
+  <link href="css/movement.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-touch-icon.png" />
+  <meta property="og:title" content="KATSUKI" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="『KATSUKI』ポートフォリオサイトです" />
+  <meta property="og:url" content="https://pf.katsumaru.blog/" />
+  <meta property="og:site_name" content="KATSUKI" />
+  <meta property="og:image" content="https://pf.katsumaru.blog/images/og_pf.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="KATSUKI" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
   <script src="scripts/all.js"></script>
   <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('sw.js')
-        .then((reg) => {
-          console.log('Service worker registered.', reg);
-        });
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").then((reg) => {
+        console.log("Service worker registered.", reg);
+      });
     }
   </script>
 </head>
@@ -49,16 +55,18 @@
 <body onselectstart="return false;" onmousedown="return false;" oncontextmenu="return false;">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFKVVRX" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+      style="display: none; visibility: hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <header>
-    <div class="header-contents"><a href="https://pf.katsumaru.blog/">
+    <div class="header-contents">
+      <a href="https://pf.katsumaru.blog/">
         <h1>KATSUKI</h1>
       </a>
       <div class="btn" id="open_btn">
         <label class="menu-btn"><span></span></label>
       </div>
-    </div><!-- header-contents -->
+    </div>
+    <!-- header-contents -->
   </header>
 
   <div id="boxmenu">
@@ -74,9 +82,11 @@
 
       <div class="sns_btm">
         <ul class="menu_2">
-          <li><a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a>
           </li>
-          <li><a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter"></span></a>
+          <li>
+            <a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter"></span></a>
           </li>
         </ul>
       </div>
@@ -85,55 +95,74 @@
         <small>&copy; 2021 KATSUKI</small>
       </div>
     </nav>
-  </div><!-- /boxmenu -->
+  </div>
+  <!-- /boxmenu -->
   <div class="main-wrapper">
     <section class="top_video">
       <video src="video/topvideo.mp4" poster="images/topvideo.jpg" autoplay muted loop playsinline width="100%"
-        controlsList="nodownload" oncontextmenu="return false">
-      </video>
-    </section><!-- /top_video -->
+        controlsList="nodownload" oncontextmenu="return false"></video>
+    </section>
+    <!-- /top_video -->
 
     <div id="particles-js"></div>
 
     <section id="about">
-      <div class="shine"><span class="mask"><img src="images/profile.JPG" alt="ボートレーサー" width="100%"></span></div>
-      <h2 class="heading" data-en="about"><span class="slide-in leftAnime"><span
-            class="slide-in_inner leftAnimeInner">ABOUT</span></span></h2>
-    </section><!-- /about -->
+      <div class="shine"><span class="mask">
+          <img src="images/profile.JPG" alt="ボートレーサー" width="100%" />
+        </span></div>
+      <h2 class="heading" data-en="about">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">ABOUT</span></span>
+      </h2>
+    </section>
+    <!-- /about -->
 
     <section id="work">
-      <h2 class="heading" data-en="work"><span class="slide-in leftAnime"><span
-            class="slide-in_inner leftAnimeInner">WORK</span></span></h2>
+      <h2 class="heading" data-en="work">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">WORK</span></span>
+      </h2>
       <div class="weblink">
         <a href="https://katsumaru.blog/?utm_source=portfolio"><img src="images/outdoor_blog.png" alt="アウトドア部Log"
-            class="fadein"></a>
+            class="fadein" /></a>
         <p>アウトドア部Logサイト制作</p>
         <div class="blank1"></div>
         <a href="https://katsu-study.work/?utm_source=portfolio"><img src="images/JS_link.png" alt="JavaScript"
-            class="fadein"></a>
+            class="fadein" /></a>
         <p>JavaScript学習用技術ブログサイト</p>
         <div class="blank1"></div>
         <a href="https://katsu-climbing.site/?utm_source=portfolio"><img src="images/bouldering_link.png" alt="ボルダリング部"
-            class="fadein">
+            class="fadein" />
         </a>
         <p>ボルダリング部の活動サイト</p>
         <div class="blank1"></div>
-        <div class="poster smoothTrigger"><img src="images/GR_poster.png" alt="GRポスター"></div>
+        <div class="poster smoothTrigger">
+          <img src="images/GR_poster.png" alt="GRポスター" />
+        </div>
         <p>ポスター制作</p>
       </div>
-    </section><!-- /WORK -->
+    </section>
+    <!-- /WORK -->
 
     <section id="production">
-      <h2 class="heading" data-en="production"><span class="slide-in leftAnime"><span
-            class="slide-in_inner leftAnimeInner">PRODUCTION</span></span></h2>
+      <h2 class="heading" data-en="production">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">PRODUCTION</span></span>
+      </h2>
       <div class="product">
         <ul class="slider">
-          <li><a href="#"><img src="images/line_link.png" alt="LINEスタンプ"></a></li>
-          <li><a href="#"><img src="images/rogo_link.png" alt="ロゴデザイン"></a></li>
-          <li><a href="#"><img src="images/fhoto_link.png" alt="フォトギャラリー"></a></li>
-        </ul><!-- /slider -->
-      </div><!-- /product -->
-    </section><!-- /production -->
+          <li>
+            <a href="#"><img src="images/line_link.png" alt="LINEスタンプ" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/rogo_link.png" alt="ロゴデザイン" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="images/fhoto_link.png" alt="フォトギャラリー" /></a>
+          </li>
+        </ul>
+        <!-- /slider -->
+      </div>
+      <!-- /product -->
+    </section>
+    <!-- /production -->
 
     <section>
       <div class="blankimage">
@@ -142,8 +171,9 @@
     </section>
 
     <section id="news">
-      <h2 class="heading" data-en="news"><span class="slide-in leftAnime"><span
-            class="slide-in_inner leftAnimeInner">NEWS</span></span></h2>
+      <h2 class="heading" data-en="news">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">NEWS</span></span>
+      </h2>
       <div class="newstab">
         <ul class="tab">
           <li><a href="#blog">ブログ</a></li>
@@ -152,17 +182,25 @@
 
         <div id="blog" class="area">
           <ul>
-            <li><a href="https://katsumaru.blog/climbing2020/?utm_source=portfolio" target="_blank"
-                rel="noopener noreferrer">新競技スポーツクライミングで銀メダルと銅メダルの快挙</a></li>
-            <li><a href="https://katsumaru.blog/marketing/?utm_source=portfolio" target="_blank"
-                rel="noopener noreferrer">マーケティング力・市場の中の「価値」を知る</a></li>
-            <li><a href="https://katsumaru.blog/firsttime_bouldering/?utm_source=portfolio" target="_blank"
+            <li>
+              <a href="https://katsumaru.blog/climbing2020/?utm_source=portfolio" target="_blank"
+                rel="noopener noreferrer">新競技スポーツクライミングで銀メダルと銅メダルの快挙</a>
+            </li>
+            <li>
+              <a href="https://katsumaru.blog/marketing/?utm_source=portfolio" target="_blank"
+                rel="noopener noreferrer">マーケティング力・市場の中の「価値」を知る</a>
+            </li>
+            <li>
+              <a href="https://katsumaru.blog/firsttime_bouldering/?utm_source=portfolio" target="_blank"
                 rel="noopener noreferrer">ボルダリングやってみたいけど初心者でも出来る？</a>
             </li>
-            <li><a href="https://katsumaru.blog/reading/?utm_source=portfolio" target="_blank"
-                rel="noopener noreferrer">【読書で学ぶ】人生の中で幅広い知識が価値観や考え方を変えていく</a></li>
+            <li>
+              <a href="https://katsumaru.blog/reading/?utm_source=portfolio" target="_blank"
+                rel="noopener noreferrer">【読書で学ぶ】人生の中で幅広い知識が価値観や考え方を変えていく</a>
+            </li>
           </ul>
-        </div><!-- /area -->
+        </div>
+        <!-- /area -->
         <div id="skill" class="area">
           <ul>
             <li>Google広告運用（リスティング広告・ディスプレイ広告）</li>
@@ -177,40 +215,40 @@
             <li>Webライティング</li>
             <li>会計知識・財務諸表</li>
           </ul>
-        </div><!-- /area -->
-      </div><!-- /newstab -->
+        </div>
+        <!-- /area -->
+      </div>
+      <!-- /newstab -->
     </section>
 
     <section id="gallery">
-      <h2 class="heading" data-en="gallery"><span class="slide-in leftAnime"><span
-            class="slide-in_inner leftAnimeInner">GALLERY</span></span></h2>
+      <h2 class="heading" data-en="gallery">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">GALLERY</span></span>
+      </h2>
       <div class="column">
         <video src="video/workvideo.mp4" poster="images/workvideo.jpg" playsinline width="100%" controls
-          controlsList="nodownload" oncontextmenu="return false" preload="none" class="smoothTrigger">
-        </video>
+          controlsList="nodownload" oncontextmenu="return false" preload="none" class="smoothTrigger"></video>
         <video src="video/bouldering_op.mp4" poster="images/bouldering_op.jpg" playsinline width="100%" controls
-          controlsList="nodownload" oncontextmenu="return false" preload="none" class="smoothTrigger">
-        </video>
-      </div><!-- /column -->
-    </section><!-- /gallery -->
+          controlsList="nodownload" oncontextmenu="return false" preload="none" class="smoothTrigger"></video>
+      </div>
+      <!-- /column -->
+    </section>
+    <!-- /gallery -->
 
     <section id="contact">
-      <h2 class="heading" data-en="contact"><span class="slide-in leftAnime"><span
-            class="slide-in_inner leftAnimeInner">CONTACT</span></span></h2>
-    </section><!-- /CONTACT -->
-
-
-
-
-  </div><!-- /main-wrapper -->
+      <h2 class="heading" data-en="contact">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">CONTACT</span></span>
+      </h2>
+    </section>
+    <!-- /CONTACT -->
+  </div>
+  <!-- /main-wrapper -->
   <footer id="footer">
     <p id="page-top"><a href="#">TOP</a></p>
     <small>&copy; 2021 KATSUKI</small>
   </footer>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="scripts/movement.js"></script>
