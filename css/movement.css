@@ -283,7 +283,7 @@ page-top
 .greencolor {
     animation-name: movegreen;
     animation: movegreen 1.5s;
-    background: rgb(5, 50, 50);
+    background: rgb(7, 60, 60);
 }
 
 @keyframes movegreen {
@@ -291,7 +291,7 @@ page-top
         background: rgb(0, 0, 0);
     }
     to {
-        background: rgb(5, 50, 50);
+        background: rgb(7, 60, 60);
     }
 }
 
@@ -303,7 +303,7 @@ page-top
 
 @keyframes moveblack {
     from {
-        background: rgb(5, 50, 50);
+        background: rgb(7, 60, 60);
     }
     to {
         background: rgb(0, 0, 0);

@@ -12,7 +12,7 @@ $(document).ready(function () {
 =====================*/
 function fadeAnime() {
   $(".fadein").each(function () {
-    var elemPos = $(this).offset().top + 150;
+    var elemPos = $(this).offset().top + 100;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
@@ -247,7 +247,7 @@ particlesJS("particles-js", {
 //緑へ
 function colorgreen() {
   $(".colorwork").each(function () {
-    var elemPos = $(this).offset().top + 400;
+    var elemPos = $(this).offset().top + 300;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
