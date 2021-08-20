@@ -12,7 +12,7 @@ $(document).ready(function () {
 =====================*/
 function fadeAnime() {
   $(".fadein").each(function () {
-    var elemPos = $(this).offset().top - 50;
+    var elemPos = $(this).offset().top + 150;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
@@ -50,7 +50,7 @@ TOP PAGEへ
 =====================*/
 function PageTopAnime() {
   var scroll = $(window).scrollTop();
-  if (scroll >= 800) {
+  if (scroll >= 500) {
     //上から200pxスクロールしたら
     $("#page-top").removeClass("DownMove");
     $("#page-top").addClass("UpMove");
@@ -243,27 +243,11 @@ particlesJS("particles-js", {
 /*=====================
 背景色変更
 =====================*/
-//青色へ
-function colorblue() {
-  $(".colorwork").each(function () {
-    var elemPos = $(this).offset().top;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight) {
-      $(".main-wrapper").addClass("bluecolor");
-    } else {
-      $(".main-wrapper").removeClass("bluecolor");
-    }
-  });
-}
-$(window).scroll(function () {
-  colorblue();
-});
 
 //緑へ
 function colorgreen() {
-  $(".colorproduction").each(function () {
-    var elemPos = $(this).offset().top;
+  $(".colorwork").each(function () {
+    var elemPos = $(this).offset().top + 400;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
@@ -280,7 +264,7 @@ $(window).scroll(function () {
 //黒へ
 function colorblack() {
   $(".colornews").each(function () {
-    var elemPos = $(this).offset().top;
+    var elemPos = $(this).offset().top + 100;
     var scroll = $(window).scrollTop();
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
