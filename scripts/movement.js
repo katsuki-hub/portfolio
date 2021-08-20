@@ -1,11 +1,15 @@
-/*メニュースライド*/
+/*=====================
+メニュースライド
+=====================*/
 $(document).ready(function () {
   $("#open_btn").on("click", function () {
     $("#boxmenu").slideToggle();
   });
 });
 
-/*画像フェード*/
+/*=====================
+画像フェード
+=====================*/
 function fadeAnime() {
   $('.fadein').each(function () {
     var elemPos = $(this).offset().top - 50;
@@ -22,7 +26,9 @@ $(window).scroll(function () {
   fadeAnime();
 });
 
-/*にゅ～ん*/
+/*=====================
+にゅ～ん
+=====================*/
 function smoothAnime() {
   $('.smoothTrigger').each(function () {
     var elemPos = $(this).offset().top - 50;
@@ -39,7 +45,9 @@ $(window).scroll(function () {
   smoothAnime();
 });
 
-/*TOP PAGEへ*/
+/*=====================
+TOP PAGEへ
+=====================*/
 function PageTopAnime() {
   var scroll = $(window).scrollTop();
   if (scroll >= 800) {//上から200pxスクロールしたら
@@ -67,4 +75,28 @@ $('#page-top a').click(function () {
     scrollTop: 0
   }, 1000);//ページトップスクロールの速さ。
   return false;//リンク自体の無効化
+});
+
+/*=====================
+流れるテキスト
+=====================*/
+function slideAnime() {
+  //====左に動くアニメーションここから===
+  $('.leftAnime').each(function () {
+    var elemPos = $(this).offset().top - 10;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass("slideAnimeLeftRight");
+      $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft");
+    } else {
+      $(this).removeClass("slideAnimeLeftRight");
+      $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft");
+    }
+  });
+
+}
+
+$(window).scroll(function () {
+  slideAnime();
 });
