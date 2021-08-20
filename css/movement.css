@@ -221,10 +221,6 @@ page-top
 流れるテキスト
 =====================*/
 
-.slide-h {
-    text-align: center;
-}
-
 .slide-in {
     overflow: hidden;
     display: inline-block;
