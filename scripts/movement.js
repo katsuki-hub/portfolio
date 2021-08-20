@@ -2,164 +2,164 @@
 メニュースライド
 =====================*/
 $(document).ready(function () {
-    $("#open_btn").on("click", function () {
-        $("#boxmenu").slideToggle();
-    });
+  $("#open_btn").on("click", function () {
+    $("#boxmenu").slideToggle();
+  });
 });
 
 /*=====================
 画像フェード
 =====================*/
 function fadeAnime() {
-    $(".fadein").each(function () {
-        var elemPos = $(this).offset().top - 50;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll >= elemPos - windowHeight) {
-            $(this).addClass("fadeUp");
-        } else {
-            $(this).removeClass("fadeUp");
-        }
-    });
+  $(".fadein").each(function () {
+    var elemPos = $(this).offset().top - 50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass("fadeUp");
+    } else {
+      $(this).removeClass("fadeUp");
+    }
+  });
 }
 $(window).scroll(function () {
-    fadeAnime();
+  fadeAnime();
 });
 
 /*=====================
 にゅ～ん
 =====================*/
 function smoothAnime() {
-    $(".smoothTrigger").each(function () {
-        var elemPos = $(this).offset().top - 50;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll >= elemPos - windowHeight) {
-            $(this).addClass("smooth");
-        } else {
-            $(this).removeClass("smooth");
-        }
-    });
+  $(".smoothTrigger").each(function () {
+    var elemPos = $(this).offset().top - 50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass("smooth");
+    } else {
+      $(this).removeClass("smooth");
+    }
+  });
 }
 $(window).scroll(function () {
-    smoothAnime();
+  smoothAnime();
 });
 
 /*=====================
 TOP PAGEへ
 =====================*/
 function PageTopAnime() {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 800) {
-        //上から200pxスクロールしたら
-        $("#page-top").removeClass("DownMove");
-        $("#page-top").addClass("UpMove");
-    } else {
-        if ($("#page-top").hasClass("UpMove")) {
-            $("#page-top").removeClass("UpMove");
-            $("#page-top").addClass("DownMove");
-        }
+  var scroll = $(window).scrollTop();
+  if (scroll >= 800) {
+    //上から200pxスクロールしたら
+    $("#page-top").removeClass("DownMove");
+    $("#page-top").addClass("UpMove");
+  } else {
+    if ($("#page-top").hasClass("UpMove")) {
+      $("#page-top").removeClass("UpMove");
+      $("#page-top").addClass("DownMove");
     }
+  }
 }
 
 $(window).scroll(function () {
-    PageTopAnime();
+  PageTopAnime();
 });
 
 $(window).on("load", function () {
-    PageTopAnime();
+  PageTopAnime();
 });
 
 // #page-topをクリックした際の設定
 $("#page-top a").click(function () {
-    $("body,html").animate({
-        scrollTop: 0,
-    },
-        1000
-    ); //ページトップスクロールの速さ。
-    return false; //リンク自体の無効化
+  $("body,html").animate({
+    scrollTop: 0,
+  },
+    1000
+  ); //ページトップスクロールの速さ。
+  return false; //リンク自体の無効化
 });
 
 /*=====================
 流れるテキスト
 =====================*/
 function slideAnime() {
-    //====左に動くアニメーションここから===
-    $(".leftAnime").each(function () {
-        var elemPos = $(this).offset().top - 10;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll >= elemPos - windowHeight) {
-            $(this).addClass("slideAnimeLeftRight");
-            $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft");
-        } else {
-            $(this).removeClass("slideAnimeLeftRight");
-            $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft");
-        }
-    });
+  //====左に動くアニメーションここから===
+  $(".leftAnime").each(function () {
+    var elemPos = $(this).offset().top - 10;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass("slideAnimeLeftRight");
+      $(this).children(".leftAnimeInner").addClass("slideAnimeRightLeft");
+    } else {
+      $(this).removeClass("slideAnimeLeftRight");
+      $(this).children(".leftAnimeInner").removeClass("slideAnimeRightLeft");
+    }
+  });
 }
 
 $(window).scroll(function () {
-    slideAnime();
+  slideAnime();
 });
 
 /*=====================
 背景アニメーション
 =====================*/
 particlesJS("particles-js", {
-    particles: {
-        number: { value: 80, density: { enable: true, value_area: 800 } },
-        color: { value: "#ffffff" },
-        shape: {
-            type: "circle",
-            stroke: { width: 0, color: "#000000" },
-            polygon: { nb_sides: 5 },
-            image: { src: "img/github.svg", width: 100, height: 100 },
-        },
-        opacity: {
-            value: 0.5,
-            random: false,
-            anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
-        },
-        size: {
-            value: 3,
-            random: true,
-            anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
-        },
-        line_linked: {
-            enable: true,
-            distance: 150,
-            color: "#ffffff",
-            opacity: 0.4,
-            width: 1,
-        },
-        move: {
-            enable: true,
-            speed: 6,
-            direction: "none",
-            random: false,
-            straight: false,
-            out_mode: "out",
-            bounce: false,
-            attract: { enable: false, rotateX: 600, rotateY: 1200 },
-        },
+  particles: {
+    number: { value: 80, density: { enable: true, value_area: 800 } },
+    color: { value: "#ffffff" },
+    shape: {
+      type: "circle",
+      stroke: { width: 0, color: "#000000" },
+      polygon: { nb_sides: 5 },
+      image: { src: "img/github.svg", width: 100, height: 100 },
     },
-    interactivity: {
-        detect_on: "canvas",
-        events: {
-            onhover: { enable: true, mode: "repulse" },
-            onclick: { enable: true, mode: "push" },
-            resize: true,
-        },
-        modes: {
-            grab: { distance: 400, line_linked: { opacity: 1 } },
-            bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
-            repulse: { distance: 200, duration: 0.4 },
-            push: { particles_nb: 4 },
-            remove: { particles_nb: 2 },
-        },
+    opacity: {
+      value: 0.5,
+      random: false,
+      anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false },
     },
-    retina_detect: true,
+    size: {
+      value: 3,
+      random: true,
+      anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#ffffff",
+      opacity: 0.4,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 6,
+      direction: "none",
+      random: false,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+      attract: { enable: false, rotateX: 600, rotateY: 1200 },
+    },
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" },
+      resize: true,
+    },
+    modes: {
+      grab: { distance: 400, line_linked: { opacity: 1 } },
+      bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+      repulse: { distance: 200, duration: 0.4 },
+      push: { particles_nb: 4 },
+      remove: { particles_nb: 2 },
+    },
+  },
+  retina_detect: true,
 });
 
 /*sakura--------------
@@ -243,3 +243,53 @@ particlesJS("particles-js", {
 /*=====================
 背景色変更
 =====================*/
+//青色へ
+function colorblue() {
+  $(".colorwork").each(function () {
+    var elemPos = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(".main-wrapper").addClass("bluecolor");
+    } else {
+      $(".main-wrapper").removeClass("bluecolor");
+    }
+  });
+}
+$(window).scroll(function () {
+  colorblue();
+});
+
+//緑へ
+function colorgreen() {
+  $(".colorproduction").each(function () {
+    var elemPos = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(".main-wrapper").addClass("greencolor");
+    } else {
+      $(".main-wrapper").removeClass("greencolor");
+    }
+  });
+}
+$(window).scroll(function () {
+  colorgreen();
+});
+
+//黒へ
+function colorblack() {
+  $(".colornews").each(function () {
+    var elemPos = $(this).offset().top;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(".main-wrapper").addClass("blackcolor");
+    } else {
+      $(".main-wrapper").removeClass("blackcolor");
+    }
+  });
+}
+$(window).scroll(function () {
+  colorblack();
+});

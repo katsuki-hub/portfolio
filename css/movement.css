@@ -279,3 +279,48 @@ page-top
 /*=====================
 背景色
 =====================*/
+
+.bluecolor {
+    animation-name: moveblue;
+    animation: moveblue 1.5s;
+    background-color: rgb(10, 10, 50);
+}
+
+@keyframes moveblue {
+    from {
+        background-color: rgb(0, 0, 0);
+    }
+    to {
+        background-color: rgb(10, 10, 50);
+    }
+}
+
+.greencolor {
+    animation-name: movegreen;
+    animation: movegreen 1.5s;
+    background: rgb(5, 49, 27);
+}
+
+@keyframes movegreen {
+    from {
+        background: rgb(0, 0, 0);
+    }
+    to {
+        background: rgb(5, 49, 27);
+    }
+}
+
+.blackcolor {
+    animation-name: moveblack;
+    animation: moveblack 1.5s;
+    background: rgb(0, 0, 0);
+}
+
+@keyframes moveblack {
+    from {
+        background: rgb(5, 49, 27);
+    }
+    to {
+        background: rgb(0, 0, 0);
+    }
+}
