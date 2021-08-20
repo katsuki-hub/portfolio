@@ -46,6 +46,10 @@ p {
   color: #fff;
 }
 
+#particles-js {
+  height: 12em;
+}
+
 h2 {
   color: #fff;
   font-size: 14px;
