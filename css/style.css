@@ -59,6 +59,7 @@ header {
     max-width: 1200px;
     margin: -13px 0 0 0;
     padding: 0;
+    z-index: 99;
 }
 
 #boxmenu nav {
@@ -73,18 +74,28 @@ header {
 }
 
 #boxmenu li {
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: bold;
     padding: 0 0 0 20px;
 }
 
 #boxmenu li a {
-    color: #fff;
     text-decoration: none;
+}
+
+.menu_1 li a{
+    color: #fff;
+    text-shadow: 3px 3px 3px rgb(230, 16, 16);
+}
+
+.menu_2 li a{
+    color: #fff;
+    font-size: 25px;
 }
 
 .sns_btm {
     float: right;
-    margin-top: -55px;
+    margin-top: -70px;
 }
 
 .copyright {
@@ -365,12 +376,20 @@ footer {
         padding: 0 10px;
     }
     #boxmenu {
-        display: none;
+        position: fixed;
+        top: -120%;
         background-color: rgba(0, 0, 0, 0.8);
+        margin: 2px 0;
+        transition: all 0.6s;
+        width: 100%;
+    }
+    #boxmenu.panelactive {
+        top: 0;
     }
     #boxmenu nav {
         display: inline;
         float: none;
+        width: 100%;
     }
     #boxmenu ul {
         display: inline;
@@ -378,15 +397,24 @@ footer {
     #boxmenu li {
         font-size: 20px;
         padding: 5px 0 5px 20px;
+        text-align: center;
+    }
+    #boxmenu li a {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        margin: 8px 0;
     }
     .menu_1 li {
         border-bottom: 1px solid #ffffff;
     }
     .sns_btm {
-        display: flex;
-        margin-left: 43%;
         float: none;
         margin-top: 0;
+        text-align: center;
+        position: 50% 50%;
+        margin-left: 43%;
     }
     .menu_2 li {
         float: left;
@@ -401,6 +429,7 @@ footer {
         justify-content: center;
         align-items: center;
         cursor: pointer;
+        z-index: 999;
     }
     .copyright {
         display: block;
@@ -408,6 +437,7 @@ footer {
         font-size: 18px;
         color: #fff;
         padding: 15px;
+        margin-top: 60px;
     }
     .profile {
         float: none;
