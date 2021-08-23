@@ -32,6 +32,14 @@ p {
     margin: 0;
 }
 
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1000;
+}
+
 .header-contents {
     box-sizing: content-box;
     text-align: center;
@@ -42,12 +50,47 @@ p {
     display: inline-block;
     font-size: 2rem;
     letter-spacing: 0.1em;
-    padding: 5px;
     color: #fff;
+}
+
+#boxmenu {
+    max-width: 1200px;
+    margin: -13px 0 0 0;
+    padding: 0;
+}
+
+#boxmenu nav {
+    display: flex;
+    float: right;
+}
+
+#boxmenu ul {
+    display: flex;
+    margin: 0 20px 0 5px;
+    padding: 0;
+    list-style-type: none;
+}
+
+#boxmenu li {
+    font-size: 16px;
+    padding: 0 0 0 20px;
+}
+
+#boxmenu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    display: none;
 }
 
 #particles-js {
     height: 12em;
+}
+
+.top_video {
+    padding-top: 60px;
 }
 
 h2 {
@@ -121,32 +164,6 @@ h3 {
     color: rgba(65, 80, 80, 0.6);
     font-size: 30px;
     font-style: italic;
-}
-
-#boxmenu nav {
-    display: flex;
-    float: right;
-}
-
-#boxmenu ul {
-    display: flex;
-    margin: 0 20px 0 5px;
-    padding: 0;
-    list-style-type: none;
-}
-
-#boxmenu li {
-    font-size: 18px;
-    padding: 8px 0 8px 20px;
-}
-
-#boxmenu li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.copyright {
-    display: none;
 }
 
 .blank1 {
@@ -225,7 +242,7 @@ h3 {
 =====================*/
 
 #news {
-    margin: 20px;
+    margin: 20px 100px;
 }
 
 .newstab {
@@ -343,6 +360,7 @@ footer {
     }
     #boxmenu {
         display: none;
+        background-color: rgba(0, 0, 0, 0.8);
     }
     #boxmenu nav {
         display: inline;
@@ -352,7 +370,7 @@ footer {
         display: inline;
     }
     #boxmenu li {
-        font-size: 24px;
+        font-size: 20px;
     }
     .menu_1 li {
         border-bottom: 1px solid #ffffff;
@@ -409,6 +427,9 @@ footer {
     .right-poster {
         float: none;
         width: 100%;
+    }
+    #news {
+        margin: 40px;
     }
     /*三本線のメニューボタン*/
     .menu-btn span:before {
@@ -468,5 +489,8 @@ footer {
     }
     .left-link {
         width: 100%;
+    }
+    #news {
+        margin: 20px;
     }
 }
