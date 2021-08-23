@@ -147,7 +147,7 @@ h3 {
 }
 
 .p2 {
-    padding: 0 15px;
+    padding: 0 12px;
     margin: 2.5em 0;
     font-size: 13px;
     color: rgb(200, 200, 200);
@@ -413,8 +413,8 @@ footer {
     }
     .profile {
         float: none;
-        width: 100%;
-        margin: 0.7em;
+        width: 94%;
+        margin: auto;
     }
     .mobile-img {
         display: initial;
