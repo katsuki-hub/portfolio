@@ -385,6 +385,8 @@ footer {
     .sns_btm {
         display: flex;
         margin-left: 43%;
+        float: none;
+        margin-top: 0;
     }
     .menu_2 li {
         float: left;
@@ -399,10 +401,6 @@ footer {
         justify-content: center;
         align-items: center;
         cursor: pointer;
-    }
-    .sns_btm {
-        float: none;
-        margin-top: 55px;
     }
     .copyright {
         display: block;
@@ -488,7 +486,7 @@ footer {
 
 @media screen and (max-width:480px) {
     .sns_btm {
-        margin-left: 35%;
+        margin-left: 37%;
     }
     .left-colunm {
         float: none;
