@@ -377,11 +377,12 @@ footer {
     }
     #boxmenu {
         position: fixed;
-        top: -120%;
+        top: -200%;
         background-color: rgba(0, 0, 0, 0.8);
         margin: 2px 0;
         transition: all 0.6s;
         width: 100%;
+        margin-top: 60px;
     }
     #boxmenu.panelactive {
         top: 0;
@@ -396,7 +397,7 @@ footer {
     }
     #boxmenu li {
         font-size: 20px;
-        padding: 5px 0 5px 20px;
+        padding: 5px 20px;
         text-align: center;
     }
     #boxmenu li a {
@@ -412,9 +413,7 @@ footer {
     .sns_btm {
         float: none;
         margin-top: 0;
-        text-align: center;
-        position: 50% 50%;
-        margin-left: 43%;
+        margin-left: 40%;
     }
     .menu_2 li {
         float: left;
@@ -516,7 +515,7 @@ footer {
 
 @media screen and (max-width:480px) {
     .sns_btm {
-        margin-left: 37%;
+        margin-left: 31%;
     }
     .left-colunm {
         float: none;
