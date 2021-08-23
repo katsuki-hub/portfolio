@@ -2,7 +2,7 @@
 メニュースライド
 =====================*/
 $(document).ready(function () {
-  $("#open_btn").on("click", function () {
+  $(".btn").on("click", function () {
     $("#boxmenu").slideToggle();
   });
 });
