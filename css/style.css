@@ -371,6 +371,7 @@ footer {
     }
     #boxmenu li {
         font-size: 20px;
+        padding: 5px 0 5px 20px;
     }
     .menu_1 li {
         border-bottom: 1px solid #ffffff;
