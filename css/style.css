@@ -40,6 +40,7 @@ header {
     position: fixed;
     z-index: 1000;
     text-align: center;
+    top: 0;
 }
 
 .header-contents {
@@ -74,7 +75,7 @@ header {
 }
 
 #boxmenu li {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
     padding: 0 0 0 20px;
 }
@@ -83,6 +84,10 @@ header {
     text-decoration: none;
 }
 
+#boxmenu li a:hover {
+    color: #db8282;
+  }
+
 .menu_1 li a{
     color: #fff;
     text-shadow: 3px 3px 3px rgb(230, 16, 16);
@@ -90,12 +95,12 @@ header {
 
 .menu_2 li a{
     color: #fff;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .sns_btm {
     float: right;
-    margin-top: -70px;
+    margin-top: -65px;
 }
 
 .copyright {
@@ -368,8 +373,12 @@ footer {
 =====================*/
 
 @media screen and ( max-width:800px) {
+    header {
+        height: 40px;
+        background-color: rgba(111, 150, 150, 0.5);
+      }
     .header-contents {
-        line-height: 30px;
+        line-height: 20px;
     }
     .header-contents h1 {
         font-size: 1.3rem;
@@ -379,10 +388,9 @@ footer {
         position: fixed;
         top: -200%;
         background-color: rgba(0, 0, 0, 0.8);
-        margin: 2px 0;
         transition: all 0.6s;
         width: 100%;
-        margin-top: 60px;
+        margin-top: 40px;
     }
     #boxmenu.panelactive {
         top: 0;
@@ -420,7 +428,7 @@ footer {
     }
     .menu-btn {
         position: absolute;
-        top: 15px;
+        top: 5px;
         right: 15px;
         display: flex;
         height: 30px;
@@ -437,6 +445,9 @@ footer {
         color: #fff;
         padding: 15px;
         margin-top: 60px;
+    }
+    .top_video {
+        padding-top: 40px;
     }
     .profile {
         float: none;
