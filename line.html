@@ -129,6 +129,58 @@
         </li>
         <li><a href="images/line/line10.png" data-lightbox="line"><img src="images/line/line10.png" alt="LINEスタンプ"></a>
         </li>
+        <li><a href="images/line/line11.png" data-lightbox="line"><img src="images/line/line11.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line12.png" data-lightbox="line"><img src="images/line/line12.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line13.png" data-lightbox="line"><img src="images/line/line13.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line14.png" data-lightbox="line"><img src="images/line/line14.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line15.png" data-lightbox="line"><img src="images/line/line15.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line16.png" data-lightbox="line"><img src="images/line/line16.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line17.png" data-lightbox="line"><img src="images/line/line17.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line18.png" data-lightbox="line"><img src="images/line/line18.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line19.png" data-lightbox="line"><img src="images/line/line19.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line20.png" data-lightbox="line"><img src="images/line/line20.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line21.png" data-lightbox="line"><img src="images/line/line21.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line22.png" data-lightbox="line"><img src="images/line/line22.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line23.png" data-lightbox="line"><img src="images/line/line23.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line24.png" data-lightbox="line"><img src="images/line/line24.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line25.png" data-lightbox="line"><img src="images/line/line25.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line26.png" data-lightbox="line"><img src="images/line/line26.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line27.png" data-lightbox="line"><img src="images/line/line27.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line28.png" data-lightbox="line"><img src="images/line/line28.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line29.png" data-lightbox="line"><img src="images/line/line29.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line30.png" data-lightbox="line"><img src="images/line/line30.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line31.png" data-lightbox="line"><img src="images/line/line31.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line32.png" data-lightbox="line"><img src="images/line/line32.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line33.png" data-lightbox="line"><img src="images/line/line33.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line34.png" data-lightbox="line"><img src="images/line/line34.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line35.png" data-lightbox="line"><img src="images/line/line35.png" alt="LINEスタンプ"></a>
+        </li>
+        <li><a href="images/line/line36.png" data-lightbox="line"><img src="images/line/line36.png" alt="LINEスタンプ"></a>
+        </li>
       </ul>
 
     </section>
@@ -147,6 +199,23 @@
       'wrapAround': true,
       'albumLabel': ' %1 / total %2 '
     })
+    
+    function galleryAnime() {
+  $('.gallery li').each(function () {
+    var elemPos = $(this).offset().top + 50;
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight) {
+      $(this).addClass('flipLeft');
+    } else {
+      $(this).removeClass('flipLeft');
+    }
+  });
+}
+
+$(window).scroll(function () {
+  galleryAnime();
+});
   </script>
 </body>
 
