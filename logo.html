@@ -52,7 +52,7 @@
   </script>
 </head>
 
-<body onselectstart="return false;" onmousedown="return false;" oncontextmenu="return false;">
+<body onselectstart="return false;" onmousedown="return false;" oncontextmenu="return false;" class="imgbg">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFKVVRX" height="0" width="0"
       style="display: none; visibility: hidden"></iframe></noscript>
@@ -145,29 +145,12 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
-  <script src="scripts/movement.js"></script>
+  <script src="scripts/puroduct.js"></script>
   <script>
     lightbox.option({
       'wrapAround': true,
       'albumLabel': ' %1 / total %2 '
     })
-
-    function galleryAnime() {
-  $('.gallery li').each(function () {
-    var elemPos = $(this).offset().top + 50;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight) {
-      $(this).addClass('flipLeft');
-    } else {
-      $(this).removeClass('flipLeft');
-    }
-  });
-}
-
-$(window).scroll(function () {
-  galleryAnime();
-});
   </script>
 </body>
 

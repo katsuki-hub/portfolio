@@ -4,7 +4,7 @@
 =====================*/
 
 .slider {
-    width: 80%;
+    width: 88%;
     margin: 0 auto;
     padding: 0;
     list-style: none;
@@ -31,12 +31,12 @@
 }
 
 .slick-prev {
-    left: -5%;
+    left: -3%;
     transform: rotate(-135deg);
 }
 
 .slick-next {
-    right: -5%;
+    right: -3%;
     transform: rotate(45deg);
 }
 

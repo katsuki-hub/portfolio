@@ -32,6 +32,10 @@ p {
   margin: 0;
 }
 
+.imgbg {
+  background-color: rgb(50, 80, 60);
+}
+
 header {
   background-color: rgba(0, 0, 0, 0.8);
   max-width: 1200px;
