@@ -81,13 +81,13 @@
     width: 50%;
     height: 100%;
     top: 0;
-    left: -75%;
+    left: -100%;
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
     transform: skewX(-25deg);
 }
 
 .shine span.mask:hover::before {
-    animation: shine 1.5s;
+    animation: shine 1.2s;
 }
 
 @keyframes shine {
