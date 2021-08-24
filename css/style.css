@@ -378,11 +378,10 @@ footer {
         background-color: rgba(111, 150, 150, 0.5);
       }
     .header-contents {
-        line-height: 20px;
+        line-height: 15px;
     }
     .header-contents h1 {
         font-size: 1.3rem;
-        padding: 0 10px;
     }
     #boxmenu {
         position: fixed;
