@@ -120,8 +120,63 @@
               alt="Photo Gallery"></a></li>
         <li><a href="images/nature/gn5.jpg" data-lightbox="photo"><img src="images/nature/gn5.jpg"
               alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn6.jpg" data-lightbox="photo"><img src="images/nature/gn6.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn7.jpg" data-lightbox="photo"><img src="images/nature/gn7.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn8.jpg" data-lightbox="photo"><img src="images/nature/gn8.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn9.jpg" data-lightbox="photo"><img src="images/nature/gn9.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn10.jpg" data-lightbox="photo"><img src="images/nature/gn10.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn11.jpg" data-lightbox="photo"><img src="images/nature/gn11.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn12.jpg" data-lightbox="photo"><img src="images/nature/gn12.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn13.jpg" data-lightbox="photo"><img src="images/nature/gn13.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn14.jpg" data-lightbox="photo"><img src="images/nature/gn14.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn15.jpg" data-lightbox="photo"><img src="images/nature/gn15.jpg"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn16.JPG" data-lightbox="photo"><img src="images/nature/gn16.JPG"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn17.JPG" data-lightbox="photo"><img src="images/nature/gn17.JPG"
+              alt="Photo Gallery"></a></li>
+        <li><a href="images/nature/gn18.JPG" data-lightbox="photo"><img src="images/nature/gn18.JPG"
+              alt="Photo Gallery"></a></li>
       </ul>
 
+      <h3>バイク</h3>
+      <ul class="gallery">
+        <li><a href="images/bike/gb1.jpg" data-lightbox="photo"><img src="images/bike/gb1.jpg" alt="Photo Gallery"></a>
+        </li>
+        <li><a href="images/bike/gb2.jpg" data-lightbox="photo"><img src="images/bike/gb2.jpg" alt="Photo Gallery"></a>
+        </li>
+        <li><a href="images/bike/gb3.JPG" data-lightbox="photo"><img src="images/bike/gb3.JPG" alt="Photo Gallery"></a>
+        </li>
+        <li><a href="images/bike/gb4.JPG" data-lightbox="photo"><img src="images/bike/gb4.JPG" alt="Photo Gallery"></a>
+        </li>
+      </ul>
+
+      <h3>キャンプ</h3>
+      <ul class="gallery">
+        <li><a href="images/camp/gc1.jpg" data-lightbox="photo"><img src="images/camp/gc1.jpg" alt="Photo Gallery"></a>
+        </li>
+        <li><a href="images/camp/gc2.jpg" data-lightbox="photo"><img src="images/camp/gc2.jpg" alt="Photo Gallery"></a>
+        </li>
+        <li><a href="images/camp/gc3.jpg" data-lightbox="photo"><img src="images/camp/gc3.jpg" alt="Photo Gallery"></a>
+        </li>
+        <li><a href="images/camp/gc4.JPG" data-lightbox="photo"><img src="images/camp/gc4.JPG" alt="Photo Gallery"></a>
+        </li>
+        <li><a href="images/camp/gc5.JPG" data-lightbox="photo"><img src="images/camp/gc5.JPG" alt="Photo Gallery"></a>
+        </li>
+        <li><a href="images/camp/gc6.JPG" data-lightbox="photo"><img src="images/camp/gc6.JPG" alt="Photo Gallery"></a>
+        </li>
+        <li><a href="images/camp/gc7.JPG" data-lightbox="photo"><img src="images/camp/gc7.JPG" alt="Photo Gallery"></a>
+        </li>
+      </ul>
     </section>
   </div><!-- /main-wrapper -->
 
@@ -140,21 +195,21 @@
     })
 
     function galleryAnime() {
-  $('.gallery li').each(function () {
-    var elemPos = $(this).offset().top + 50;
-    var scroll = $(window).scrollTop();
-    var windowHeight = $(window).height();
-    if (scroll >= elemPos - windowHeight) {
-      $(this).addClass('flipLeft');
-    } else {
-      $(this).removeClass('flipLeft');
+      $('.gallery li').each(function () {
+        var elemPos = $(this).offset().top + 50;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll >= elemPos - windowHeight) {
+          $(this).addClass('flipLeft');
+        } else {
+          $(this).removeClass('flipLeft');
+        }
+      });
     }
-  });
-}
 
-$(window).scroll(function () {
-  galleryAnime();
-});
+    $(window).scroll(function () {
+      galleryAnime();
+    });
   </script>
 </body>
 
