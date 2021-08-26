@@ -423,7 +423,6 @@ page-top
   }
   .header-contents h1 {
     font-size: 1.3rem;
-
   }
   #boxmenu {
     position: fixed;
@@ -464,7 +463,9 @@ page-top
   .sns_btm {
     float: none;
     margin-top: 0;
-    margin-left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .menu_2 li {
     float: left;
@@ -516,7 +517,5 @@ page-top
 =====================*/
 
 @media screen and (max-width:480px) {
-  .sns_btm {
-    margin-left: 31%;
-  }
+  
 }

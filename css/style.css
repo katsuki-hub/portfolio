@@ -158,15 +158,17 @@ h3 {
 .p1 {
     padding: 0 10px;
     margin: 1em 0;
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(200, 200, 200);
+    line-height: 1.6;
 }
 
 .p2 {
     padding: 0 12px;
     margin: 2.5em 0;
-    font-size: 13px;
+    font-size: 15px;
     color: rgb(200, 200, 200);
+    line-height: 1.6;
 }
 
 .heading {
@@ -416,11 +418,15 @@ footer {
     }
     .menu_1 li {
         border-bottom: 1px solid #ffffff;
+        width: 50%;
+        margin: auto;
     }
     .sns_btm {
         float: none;
         margin-top: 0;
-        margin-left: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .menu_2 li {
         float: left;
@@ -463,10 +469,12 @@ footer {
         font-size: 15px;
     }
     .p1 {
-        font-size: 13px;
+        font-size: 14px;
+        line-height: 1.7;
     }
     .p2 {
-        font-size: 12px;
+        font-size: 13px;
+        line-height: 1.7;
     }
     .left-link {
         float: none;
@@ -524,9 +532,6 @@ footer {
 =====================*/
 
 @media screen and (max-width:480px) {
-    .sns_btm {
-        margin-left: 31%;
-    }
     .left-colunm {
         float: none;
         width: 100%;
@@ -540,5 +545,11 @@ footer {
     }
     #news {
         margin: 20px;
+    }
+    .p1 {
+        font-size: 13px;
+    }
+    .p2 {
+        font-size: 12px;
     }
 }
