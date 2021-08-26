@@ -73,15 +73,15 @@ header {
 
 #boxmenu ul {
   display: flex;
-  margin: 0 20px 0 5px;
+  margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 #boxmenu li {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bold;
-  padding: 0 0 0 20px;
+  padding: 0 10px;
 }
 
 #boxmenu li a {
@@ -442,10 +442,11 @@ page-top
   }
   #boxmenu ul {
     display: inline;
+    margin-top: 20px;
   }
   #boxmenu li {
     font-size: 20px;
-    padding: 5px 20px;
+    padding: 5px 15px;
     text-align: center;
   }
   #boxmenu li a {
