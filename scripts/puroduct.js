@@ -71,6 +71,10 @@ function slideAnime() {
   });
 }
 
+/*=====================
+画像スライド
+=====================*/
+
 $(window).on('load', function () {
   slideAnime();
 });
@@ -82,9 +86,7 @@ function galleryAnime() {
     var windowHeight = $(window).height();
     if (scroll >= elemPos - windowHeight) {
       $(this).addClass('flipLeft');
-    } else {
-      $(this).removeClass('flipLeft');
-    }
+    } 
   });
 }
 
