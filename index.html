@@ -1,78 +1,293 @@
-<!doctype html>
-<html lang="ja">
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js",
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-TFKVVRX");
+  </script>
+  <!-- End Google Tag Manager -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="x-ua-compatible" content="IE=edge" />
+  <meta name=”robots” content=”noindex”>
   <title>KATSUKI</title>
-  <meta name="description" content="『KATSUKI』ポートフォリオサイトです">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/all.css" rel="stylesheet">
+  <meta name="description" content="『KATSUKI』ポートフォリオサイトです" />
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link href="css/all.css" rel="stylesheet" />
+  <link href="css/slick.css" rel="stylesheet" type="text/css" />
+  <link href="css/movement.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="android-touch-icon.png" />
+  <meta property="og:title" content="KATSUKI" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="『KATSUKI』ポートフォリオサイトです" />
+  <meta property="og:url" content="https://pf.katsumaru.blog/" />
+  <meta property="og:site_name" content="KATSUKI" />
+  <meta property="og:image" content="https://pf.katsumaru.blog/images/og_pf.png" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-title" content="KATSUKI" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
   <script src="scripts/all.js"></script>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("sw.js").then((reg) => {
+        console.log("Service worker registered.", reg);
+      });
+    }
+  </script>
 </head>
 
-<body>
+<body onselectstart="return false;" onmousedown="return false;" oncontextmenu="return false;">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TFKVVRX" height="0" width="0"
+      style="display: none; visibility: hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <header>
-    <div class="header-contents"><a href="https://pf.katsumaru.blog/">
+    <div class="header-contents">
+      <a href="https://pf.katsumaru.blog/">
         <h1>KATSUKI</h1>
       </a>
       <div class="btn" id="open_btn">
         <label class="menu-btn"><span></span></label>
       </div>
-    </div><!-- header-contents -->
-  </header>
-
-  <div id="boxmenu">
-    <nav>
-      <ul class="menu_1">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#work">WORK</a></li>
-        <li><a href="#news">NEWS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-
-
-      <div class="sns_btm">
-        <ul class="menu_2">
-          <li><a href="https://www.instagram.com/" target="_blank"><span class="fab fa-instagram"></span></a>
-          </li>
-          <li><a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter"></span></a></li>
+    </div>
+    <!-- header-contents -->
+    <div id="boxmenu">
+      <nav>
+        <ul class="menu_1 btn">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#work">WORK</a></li>
+          <li><a href="#production">PRODUCTION</a></li>
+          <li><a href="#news">NEWS</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
         </ul>
-      </div>
-      <div class="copyright">
-        <small>&copy; 2021 KATSUKI</small>
-      </div>
 
-    </nav>
-  </div><!-- /boxmenu -->
+        <div class="sns_btm">
+          <ul class="menu_2">
+            <li>
+              <a href="https://www.instagram.com/katsumaru_rr/" target="_blank"><span class="fab fa-instagram"></span></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Katsumaru_RR" target="_blank"><span class="fab fa-twitter"></span></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="copyright">
+          <small>&copy; 2021 KATSUKI</small>
+        </div>
+      </nav>
+    </div><!-- /boxmenu -->
+  </header>
 
   <div class="main-wrapper">
     <section class="top_video">
       <video src="video/topvideo.mp4" poster="images/topvideo.jpg" autoplay muted loop playsinline width="100%"
-        controlsList="nodownload" oncontextmenu="return false">
-      </video>
+        controlsList="nodownload" oncontextmenu="return false"></video>
     </section><!-- /top_video -->
 
-    <section>
 
-      
+    <div id="particles-js" class="particles"></div>
+
+    <section id="about">
+      <div class="shine mobile-img"><span class="mask"><img src="images/profile.JPG" alt="ボートレーサー"
+            width="100%" /></span></div>
+      <h2 class="heading" data-en="about">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">ABOUT</span></span>
+      </h2>
+      <div class="shine pc-img"><span class="mask"><img src="images/profile_pc.png" alt="ボートレーサー" width="100%" /></span>
+      </div>
+      <div class="profile">
+        <h3>KATSUKI</h3>
+        <P class="p1">
+          1985年生まれ　元ボートレーサー<br>
+          現在は経営コンサルタント<br>
+          From：長崎県壱岐島で生まれ、福岡県で育つ<br>
+          Favorite Quote：着眼大局　着手小局<br>
+          ”私たちが生きている社会の殆どは、ビジネスで動いている”
+        </P>
+        <p class="p2">
+          高校生の頃に夢だったボートレーサーの道へ進むために、日本で唯一のボートレーサー養成機関である「やまと競艇学校」への受験を目指す<br>
+          3度目の受験で100期生として合格し、20歳からボートレース業界へ！<br>
+          現役時代では成績や怪我にも悩まされたが、勝負の世界で人生をかけてきたことは唯一無二の経験だった。<br>
+          30歳の節目で現役を引退し、通販事業の会社へ就職する。<br>
+          いずれは、自身で事業を行う事を視野に入れていたことから、PCスキルやWEB集客、WEB運営は今後欠かせない分野だと考えて、WEBマーケティングを中心に広く勉強してきた。<br>
+          他にも様々な経験をし、適応力と広い視野が養われた。<br>
+          中でも、短期プロジェクトであった、通信基地局の遠隔データ入れ替え業務において業務効率化に対する考え方が大きく変わった。<br>
+          現在は事業のリアルな部分を知りたくて、経営コンサルタントとして活動中<br>
+          ある社長の「暮らしこそ、すべての仕事の原点」との言葉がある。様々なモノやサービスに溢れた世の中で、問題解決できるサービスの提供を形にし、ビジネスを作り上げることが今後の目標である。
+        </p>
+      </div>
+    </section>
+    <!-- /about -->
+
+    <section id="work" class="colorwork">
+      <h2 class="heading" data-en="work">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">WORK</span></span>
+      </h2>
+      <div class="weblink">
+        <div class="left-link">
+          <a href="https://katsumaru.blog/?utm_source=portfolio"><img src="images/outdoor_blog.png" alt="アウトドア部Log"
+              class="fadein" /></a>
+          <p>アウトドア部Logサイト制作</p>
+          <div class="blank1"></div>
+          <a href="https://katsu-study.work/?utm_source=portfolio"><img src="images/JS_link.png" alt="JavaScript"
+              class="fadein" /></a>
+          <p>JavaScript学習用技術ブログサイト</p>
+          <div class="blank1"></div>
+          <a href="https://katsu-climbing.site/?utm_source=portfolio"><img src="images/bouldering_link.png"
+              alt="ボルダリング部" class="fadein" />
+          </a>
+          <p>ボルダリング部の活動サイト</p>
+          <div class="blank1"></div>
+        </div>
+        <div class="right-poster">
+          <div class="poster smoothTrigger">
+            <img src="images/GR_poster.png" alt="GRポスター" />
+          </div>
+        </div>
+        <p>ポスター制作</p>
+      </div>
+    </section>
+    <!-- /WORK -->
+
+    <section id="production">
+      <h2 class="heading" data-en="production">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">PRODUCTION</span></span>
+      </h2>
+      <div class="product">
+        <ul class="slider">
+          <li>
+            <a href="line.html"><img src="images/line_link.png" alt="LINEスタンプ" /></a>
+          </li>
+          <li>
+            <a href="logo.html"><img src="images/rogo_link.png" alt="ロゴデザイン" /></a>
+          </li>
+          <li>
+            <a href="photo.html"><img src="images/pohto_link.png" alt="フォトギャラリー" /></a>
+          </li>
+          <li>
+            <a href="imgad.html"><img src="images/displayad_link.png" alt="ディスプレイ広告" /></a>
+          </li>
+        </ul><!-- /slider -->
+      </div><!-- /product -->
+    </section><!-- /production -->
+
+    <section>
+      <div class="blankimage">
+        <div class="inimage"></div>
+      </div>
     </section>
 
+    <section id="news" class="colornews">
+      <h2 class="heading" data-en="news">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">NEWS</span></span>
+      </h2>
+      <div class="newstab">
+        <ul class="tab">
+          <li><a href="#blog">ブログ</a></li>
+          <li><a href="#skill">スキル</a></li>
+        </ul>
 
+        <div id="blog" class="area">
+          <ul>
+            <li>
+              <a href="https://katsumaru.blog/climbing2020/?utm_source=portfolio" target="_blank"
+                rel="noopener noreferrer">新競技スポーツクライミングで銀メダルと銅メダルの快挙</a>
+            </li>
+            <li>
+              <a href="https://katsumaru.blog/marketing/?utm_source=portfolio" target="_blank"
+                rel="noopener noreferrer">マーケティング力・市場の中の「価値」を知る</a>
+            </li>
+            <li>
+              <a href="https://katsumaru.blog/firsttime_bouldering/?utm_source=portfolio" target="_blank"
+                rel="noopener noreferrer">ボルダリングやってみたいけど初心者でも出来る？</a>
+            </li>
+            <li>
+              <a href="https://katsumaru.blog/reading/?utm_source=portfolio" target="_blank"
+                rel="noopener noreferrer">【読書で学ぶ】人生の中で幅広い知識が価値観や考え方を変えていく</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /area -->
+        <div id="skill" class="area">
+          <ul>
+            <li>Google広告運用（リスティング広告・ディスプレイ広告）</li>
+            <li>WordPress運用</li>
+            <li>Webマーケティング</li>
+            <li>Google Analytics</li>
+            <li>Google Data Portal</li>
+            <li>映像編集</li>
+            <li>Git GitHub</li>
+            <li>HTML,CSS</li>
+            <li>JavaScript</li>
+            <li>Webライティング</li>
+            <li>会計知識・財務諸表</li>
+          </ul>
+        </div>
+        <!-- /area -->
+      </div>
+      <!-- /newstab -->
+    </section>
 
+    <section id="gallery">
+      <h2 class="heading" data-en="gallery">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">GALLERY</span></span>
+      </h2>
+      <div class="column">
+        <div class="left-colunm">
+          <video src="video/workvideo.mp4" poster="images/workvideo.jpg" playsinline width="100%" controls
+            controlsList="nodownload" oncontextmenu="return false" preload="none" class="smoothTrigger"></video>
+        </div>
+        <div class="right-culumn">
+          <video src="video/bouldering_op.mp4" poster="images/bouldering_op.jpg" playsinline width="100%" controls
+            controlsList="nodownload" oncontextmenu="return false" preload="none" class="smoothTrigger"></video>
+        </div>
+      </div>
+      <!-- /column -->
+    </section>
+    <!-- /gallery -->
 
-  </div><!-- /main-wrapper -->
-  <footer><small>&copy; 2021 KATSUKI</small></footer>
-  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script>
-    $(document).ready(function () {
-      $("#open_btn").on("click", function () {
-        $("#boxmenu").slideToggle();
-      });
-    });
-  </script>
+    <section id="contact">
+      <h2 class="heading" data-en="contact">
+        <span class="slide-in leftAnime"><span class="slide-in_inner leftAnimeInner">CONTACT</span></span>
+      </h2>
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSeLPGqL1FtqTOq4N_AuIGcHv3eR-sijsnIoJZKBVIIUgh9hvQ/viewform?embedded=true"
+        width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+
+    </section>
+    <!-- /CONTACT -->
+  </div>
+  <!-- /main-wrapper -->
+  <footer id="footer">
+    <p id="page-top"><a href="#">TOP</a></p>
+    <small>&copy; 2021 KATSUKI</small>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="scripts/movement.js"></script>
+  <script src="scripts/tabu.js"></script>
+  <script src="scripts/slick.js"></script>
 </body>
 
 </html>

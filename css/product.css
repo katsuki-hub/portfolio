@@ -1,0 +1,522 @@
+@charset "UTF-8";
+html, body {
+  min-width: 270px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  line-height: 1.5;
+  height: 100%;
+}
+
+body {
+  max-width: 1200px;
+  margin: auto;
+  background-color: black;
+}
+
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-touch-callout: none;
+  -moz-user-select: none;
+  touch-callout: none;
+  user-select: none;
+}
+
+p {
+  color: #fff;
+  padding: 0;
+  margin: 0;
+}
+
+.imgbg {
+  background-color: rgb(50, 80, 60);
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  max-width: 1200px;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  text-align: center;
+}
+
+.header-contents {
+  box-sizing: content-box;
+  text-align: center;
+  line-height: 30px;
+}
+
+.header-contents h1 {
+  display: inline-block;
+  font-size: 2rem;
+  letter-spacing: 0.1em;
+  color: #fff;
+}
+
+#boxmenu {
+  max-width: 1200px;
+  margin: -13px 0 0 0;
+  padding: 0;
+  z-index: 99;
+}
+
+#boxmenu nav {
+  float: right;
+}
+
+#boxmenu ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#boxmenu li {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+#boxmenu li a {
+  text-decoration: none;
+}
+
+#boxmenu li a:hover {
+  color: #6b7bda;
+}
+
+.menu_1 li a {
+  color: #fff;
+  text-shadow: 3px 3px 3px rgb(48, 16, 230);
+}
+
+.menu_2 li a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.sns_btm {
+  float: right;
+  margin-top: -65px;
+}
+
+.copyright {
+  display: none;
+}
+
+#bread {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  margin-top: 60px;
+}
+
+#bread ol li {
+  display: inline-block;
+  list-style: none;
+  font-weight: bold;
+}
+
+#bread ol li::after {
+  content: ">";
+  padding: 0 0.2em;
+  color: #72a1f7;
+}
+
+#bread ol li:last-child::after {
+  content: none;
+}
+
+#bread li a {
+  display: inline-block;
+  padding: 0.2em .8em;
+  border-radius: 15px;
+  text-decoration: none;
+  color: #a8c5fc;
+  background: #6c6f72;
+  font-size: 0.7em;
+}
+
+#bread li a:hover {
+  background: #9797b8;
+}
+
+h2 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgba(121, 120, 112, 0.5);
+  padding: 0;
+  margin: 60px 0;
+}
+
+h3 {
+  color: rgb(200, 200, 200);
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.heading {
+  position: relative;
+  padding: 50px 0;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.heading::before {
+  content: attr(data-en);
+  position: absolute;
+  top: 26px;
+  left: 51%;
+  transform: translateX(-50%);
+  color: rgba(65, 80, 80, 0.6);
+  font-size: 30px;
+  font-style: italic;
+}
+
+footer {
+  box-sizing: content-box;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+
+/*=====================
+画像きらり
+=====================*/
+
+.shine span.mask {
+  position: relative;
+  display: block;
+  line-height: 0;
+  overflow: hidden;
+}
+
+.shine span.mask::before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: -75%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+  transform: skewX(-25deg);
+}
+
+.shine span.mask:hover::before {
+  animation: shine 1.5s;
+}
+
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+
+/*=====================
+page-top
+=====================*/
+
+#page-top a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1630c2;
+  border-radius: 5px;
+  width: 50px;
+  height: 30px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.6rem;
+  transition: all 0.3s;
+  letter-spacing: 0.2em;
+}
+
+#page-top a:hover {
+  background: #777;
+}
+
+#page-top {
+  /*リンクを右下に固定*/
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  z-index: 2;
+  opacity: 0;
+  /*はじめは非表示*/
+  transform: translateY(100px);
+}
+
+#page-top.UpMove {
+  /*　上に上がる動き　*/
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#page-top.DownMove {
+  /*　下に下がる動き　*/
+  animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(100px);
+  }
+}
+
+/*=====================
+流れるテキスト
+=====================*/
+
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+}
+
+.leftAnime {
+  /*左右のアニメーション*/
+  opacity: 0;
+  /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  animation-name: slideTextX100;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideTextX100 {
+  from {
+    transform: translateX(-100%);
+    /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeRightLeft {
+  animation-name: slideTextX-100;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slideTextX-100 {
+  from {
+    transform: translateX(100%);
+    /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+/*=====================
+ギャラリー一覧
+=====================*/
+
+.gallery {
+  columns: 4;
+  /*段組みの数*/
+  padding: 0 15px;
+  /*ギャラリー左右に余白をつける*/
+  margin: 0;
+}
+
+.gallery li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+@media only screen and (max-width: 900px) {
+  .gallery {
+    columns: 3;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .gallery {
+    columns: 2;
+  }
+}
+
+/*=====================
+ギャラリーの画像を出現させるアニメーション
+=====================*/
+
+.flipLeft {
+  animation-name: flipLeft;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  perspective-origin: left center;
+  opacity: 0;
+}
+
+@keyframes flipLeft {
+  from {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(80deg);
+    opacity: 0;
+  }
+  to {
+    transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+    opacity: 1;
+  }
+}
+
+/*=====================
+タブレット＆スマホ
+=====================*/
+
+@media screen and ( max-width:800px) {
+  header {
+    height: 40px;
+    background-color: rgba(111, 150, 150, 0.5);
+  }
+  .header-contents {
+    line-height: 15px;
+  }
+  .header-contents h1 {
+    font-size: 1.3rem;
+  }
+  #boxmenu {
+    position: fixed;
+    top: -200%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.6s;
+    width: 100%;
+    margin-top: 40px;
+  }
+  #boxmenu.panelactive {
+    top: 0;
+  }
+  #boxmenu nav {
+    display: inline;
+    float: none;
+    width: 100%;
+  }
+  #boxmenu ul {
+    display: inline;
+    margin-top: 20px;
+  }
+  #boxmenu li {
+    font-size: 20px;
+    padding: 5px 15px;
+    text-align: center;
+  }
+  #boxmenu li a {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    margin: 6px 0;
+  }
+  .menu_1 li {
+    border-bottom: 1px solid #ffffff;
+    width: 50%;
+    margin: auto;
+  }
+  .sns_btm {
+    float: none;
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu_2 li {
+    float: left;
+  }
+  .menu-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    display: flex;
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .copyright {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    padding: 15px;
+    margin-top: 60px;
+  }
+  #bread {
+    margin-top: 50px;
+  }
+  /*三本線のメニューボタン*/
+  .menu-btn span:before {
+    bottom: 8px;
+  }
+  .menu-btn span:after {
+    top: 8px;
+  }
+  .menu-btn span, .menu-btn span:before, .menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: absolute;
+  }
+  /*三本線のメニューボタン*/
+}
+
+/*=====================
+スマホ
+=====================*/
+
+@media screen and (max-width:480px) {
+  
+}

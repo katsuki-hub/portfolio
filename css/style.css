@@ -1,113 +1,305 @@
 @charset "UTF-8";
 html, body {
-  min-width: 270px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-  background-color: rgb(51, 47, 47);
-  line-height: 1;
+    min-width: 270px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    line-height: 1.5;
+    height: 100%;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    background-color: black;
+}
+
+img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-touch-callout: none;
+    -moz-user-select: none;
+    touch-callout: none;
+    user-select: none;
+}
+
+p {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-width: 1200px;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    z-index: 1000;
+    text-align: center;
+    top: 0;
 }
 
 .header-contents {
-  box-sizing: content-box;
-  text-align: center;
-  line-height: 60px;
+    box-sizing: content-box;
+    text-align: center;
+    line-height: 30px;
 }
 
 .header-contents h1 {
-  display: inline-block;
-  font-size: 2.5rem;
-  letter-spacing: 0.1em;
-  padding: 0 10px;
-  color: #fff;
+    display: inline-block;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: #fff;
+}
+
+#boxmenu {
+    max-width: 1200px;
+    margin: -13px 0 0 0;
+    padding: 0;
+    z-index: 99;
+}
+
+#boxmenu nav {
+    float: right;
 }
 
 #boxmenu ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
 #boxmenu li {
-  font-size: 24px;
-  padding: 8px 0 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 12px;
 }
 
 #boxmenu li a {
-  color: #fff;
-  text-decoration: none;
+    text-decoration: none;
 }
 
-.menu_1 li {
-  border-bottom: 1px solid #ffffff;
+#boxmenu li a:hover {
+    color: #db8282;
 }
 
-.menu_2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.menu_1 li a {
+    color: #fff;
+    text-shadow: 3px 3px 3px rgb(230, 16, 16);
+}
+
+.menu_2 li a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sns_btm {
+    float: right;
+    margin-top: -65px;
 }
 
 .copyright {
-  text-align: center;
-  font-size: 18px;
-  color: #fff;
-  padding: 30px;
-}
-
-footer {
-  box-sizing: content-box;
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
-}
-
-@media screen and (max-width:480px) {}
-
-@media screen and ( max-width:768px) {
-  .header-contents {
-    line-height: 30px;
-  }
-  .header-contents h1 {
-    font-size: 1.3rem;
-    padding: 0 10px;
-  }
-  #boxmenu {
     display: none;
-  }
-  .menu-btn {
-    position: fixed;
-    top: 15px;
-    right: 15px;
-    display: flex;
-    height: 30px;
-    width: 30px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  /*三本線のメニューボタン*/
-  .menu-btn span:before {
-    bottom: 8px;
-  }
-  .menu-btn span:after {
-    top: 8px;
-  }
-  .menu-btn span, .menu-btn span:before, .menu-btn span:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 25px;
-    border-radius: 3px;
-    background-color: #fff;
-    position: absolute;
-  }
-  /*三本線のメニューボタン*/
 }
 
+#particles-js {
+    height: 12em;
+}
+
+.top_video {
+    padding-top: 60px;
+}
+
+h2 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(121, 120, 112, 0.5);
+    padding: 0;
+    margin: 20px 0;
+}
+
+#about {
+    width: 100%;
+    overflow: hidden;
+}
+
+.mobile-img {
+    display: none;
+}
+
+#about h2 {
+    margin-bottom: -40px;
+}
+
+.profile {
+    float: left;
+    width: 55%;
+    margin: 0.7em;
+}
+
+.pc-img {
+    float: right;
+    width: 40%;
+}
+
+h3 {
+    color: rgb(200, 200, 200);
+    padding: 10px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.p1 {
+    padding: 0 10px;
+    margin: 1em 0;
+    font-size: 16px;
+    color: rgb(200, 200, 200);
+    line-height: 1.6;
+}
+
+.p2 {
+    padding: 0 12px;
+    margin: 2.5em 0;
+    font-size: 15px;
+    color: rgb(200, 200, 200);
+    line-height: 1.6;
+}
+
+.heading {
+    position: relative;
+    padding: 50px 0;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.heading::before {
+    content: attr(data-en);
+    position: absolute;
+    top: 26px;
+    left: 51%;
+    transform: translateX(-50%);
+    color: rgba(65, 80, 80, 0.6);
+    font-size: 30px;
+    font-style: italic;
+}
+
+<<<<<<< HEAD
+.blank1 {
+    margin: 7em 0;
+}
+
+.particles {
+    background-color: black;
+}
+
+/*=====================
+#work
+=====================*/
+
+#work {
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-link {
+    float: left;
+    width: 45%;
+    margin: auto;
+}
+
+.right-poster {
+    float: right;
+    width: 55%;
+}
+
+.poster {
+    margin: auto;
+    width: 80%;
+}
+
+#work img {
+    width: 100%;
+}
+
+#work p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.weblink {
+    margin: 0 20px;
+}
+
+/*=====================
+#production
+=====================*/
+
+#production {
+    margin-top: 6em;
+    padding-bottom: 10em;
+}
+
+.product {
+    text-align: center;
+}
+
+.blankimage {
+    background-image: url(../images/inbout.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inimage {
+    height: 400px;
+}
+
+/*=====================
+#NEWS
+=====================*/
+
+#news {
+    margin: 20px 100px;
+}
+
+.newstab {
+    width: 100%;
+    max-width: 960px;
+    margin: 30px auto;
+    background: #000000;
+}
+
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    list-style: none;
+}
+
+.tab li a {
+    display: block;
+    background: rgb(75, 126, 68);
+    margin: 0 2px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.tab li.active a {
+    background: #fff;
+    color: black;
+}
+
+.area {
+=======
 @media only screen and (min-width:769px) {
   #boxmenu ul {
     display: flex;
@@ -120,6 +312,260 @@ footer {
     padding: 0 10px 0 10px;
   }
   .copyright {
+>>>>>>> master
     display: none;
-  }
+    opacity: 0;
+    background: #fff;
+    padding: 10px 20px;
+}
+
+.area ul {
+    color: rgb(76, 67, 100);
+    list-style: none;
+    padding: 10px 0;
+}
+
+.area li {
+    padding: 10px;
+}
+
+#blog.area li {
+    padding: 25px 6px 35px 6px;
+}
+
+.area a {
+    color: rgb(76, 67, 100);
+}
+
+.area.is-active {
+    display: block;
+    animation-name: displayAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*=====================
+#gallery
+=====================*/
+
+.column {
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.left-colunm {
+    float: left;
+    width: 50%;
+}
+
+.right-culumn {
+    float: right;
+    width: 50%;
+}
+
+.column video {
+    max-width: 960px;
+    pointer-events: all;
+}
+
+footer {
+    box-sizing: content-box;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+/*=====================
+タブレット＆スマホ
+=====================*/
+
+@media screen and ( max-width:800px) {
+    header {
+        height: 40px;
+        background-color: rgba(111, 150, 150, 0.5);
+    }
+    .header-contents {
+        line-height: 15px;
+    }
+    .header-contents h1 {
+        font-size: 1.3rem;
+    }
+    #boxmenu {
+        position: fixed;
+        top: -200%;
+        background-color: rgba(0, 0, 0, 0.8);
+        transition: all 0.6s;
+        width: 100%;
+        margin-top: 40px;
+    }
+    #boxmenu.panelactive {
+        top: 0;
+    }
+    #boxmenu nav {
+        display: inline;
+        float: none;
+        width: 100%;
+    }
+    #boxmenu ul {
+        display: inline;
+        margin-top: 20px;
+    }
+    #boxmenu li {
+        font-size: 20px;
+        padding: 5px 15px;
+        text-align: center;
+    }
+    #boxmenu li a {
+        display: block;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+        margin: 6px 0;
+    }
+    .menu_1 li {
+        border-bottom: 1px solid #ffffff;
+        width: 50%;
+        margin: auto;
+    }
+    .sns_btm {
+        float: none;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu_2 li {
+        float: left;
+    }
+    .menu-btn {
+        position: absolute;
+        top: 5px;
+        right: 15px;
+        display: flex;
+        height: 30px;
+        width: 30px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 999;
+    }
+    .copyright {
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        padding: 15px;
+        margin-top: 60px;
+    }
+    .top_video {
+        padding-top: 40px;
+    }
+    .profile {
+        float: none;
+        width: 94%;
+        margin: auto;
+    }
+    .mobile-img {
+        display: initial;
+    }
+    .pc-img {
+        display: none;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    .p1 {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .p2 {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+    .left-link {
+        float: none;
+        width: 80%;
+    }
+    .right-poster {
+        float: none;
+        width: 100%;
+    }
+    #news {
+        margin: 40px;
+    }
+    /*三本線のメニューボタン*/
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+    .menu-btn span:after {
+        top: 8px;
+    }
+    .menu-btn span, .menu-btn span:before, .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 25px;
+        border-radius: 3px;
+        background-color: #fff;
+        position: absolute;
+    }
+    /*三本線のメニューボタン*/
+    .blank1 {
+        margin: 3em 0;
+    }
+    .blankimage {
+        background-image: url(../images/inbout_mobile.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .inimage {
+        height: 300px;
+    }
+    .area a, .area li {
+        font-size: 12px;
+    }
+    #blog.area li {
+        padding: 20px 6px;
+    }
+}
+
+/*=====================
+スマホ
+=====================*/
+
+@media screen and (max-width:480px) {
+    .left-colunm {
+        float: none;
+        width: 100%;
+    }
+    .right-culumn {
+        float: none;
+        width: 100%;
+    }
+    .left-link {
+        width: 100%;
+    }
+    #news {
+        margin: 20px;
+    }
+    .p1 {
+        font-size: 13px;
+    }
+    .p2 {
+        font-size: 12px;
+    }
 }

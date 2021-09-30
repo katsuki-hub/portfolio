@@ -1,0 +1,20 @@
+{
+    "name": "KATSUKI",
+    "short_name": "KATSUKI",
+    "icons": [
+        {
+            "src": "/android-touch-icon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/pf_rogo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/index.html?utm_source=homescreen",
+    "display": "standalone",
+    "background_color": "#4e5a5a",
+    "theme_color": "#4e5a5a"
+}
