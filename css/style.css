@@ -190,7 +190,6 @@ h3 {
     font-style: italic;
 }
 
-<<<<<<< HEAD
 .blank1 {
     margin: 7em 0;
 }
@@ -299,20 +298,6 @@ h3 {
 }
 
 .area {
-=======
-@media only screen and (min-width:769px) {
-  #boxmenu ul {
-    display: flex;
-    float: right;
-  }
-  #boxmenu li {
-    font-size: 18px;
-  }
-  #menu_1 ul li {
-    padding: 0 10px 0 10px;
-  }
-  .copyright {
->>>>>>> master
     display: none;
     opacity: 0;
     background: #fff;
