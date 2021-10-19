@@ -348,9 +348,9 @@ h3 {
     overflow: hidden;
 }
 
-.left-colunm {
+.left-column {
     float: left;
-    width: 50%;
+    width: 49.9%;
 }
 
 .right-culumn {
@@ -533,7 +533,7 @@ footer {
 =====================*/
 
 @media screen and (max-width:480px) {
-    .left-colunm {
+    .left-column {
         float: none;
         width: 100%;
     }
