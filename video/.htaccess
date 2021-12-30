@@ -1,4 +1,0 @@
-AuthType  Basic
-AuthName  "video-clip"
-AuthUserFile  /home/video/.htpasswd
-require valid-user
